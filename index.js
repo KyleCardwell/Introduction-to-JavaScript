@@ -327,25 +327,27 @@ Using the vowelCounter function below do the following:
 
 
 function vowelCounter(str) {
-    let strArray = str.split("");
+
+    let strLC = str.toLowerCase();
+
+    let strArray = strLC.split("");
     let strArrayLength = strArray.length;
-    let vowelCount = 0
+    let vowelCount = 0;
+
+    console.log(strArray);
 
     for (let i = 0; i < strArrayLength; i++) {
-      if (strArray(i) === "a" || strArray(i) === "e" || strArray(i) === "i" || strArray(i) === "o" || strArray(i) === "u") {
+      if (strArray[i] == "a" || strArray[i] == "e" || strArray[i] == "i" || strArray[i] == "o" || strArray[i] == "u") {
         vowelCount++;
       }
     }
 
-    console.log(strArray);
-    console.log(vowelCount);
+    console.log(vowelCount + " Vowels");
     
-
-
+    return vowelCount;
 }
 
-vowelCounter("hello my name is kyle");
-
+vowelCounter("HELLO MY NAME IS KYLE");
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
@@ -354,14 +356,14 @@ function foo(){
     return 'bar';
 }
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-// export default{
-//     foo,
-//     multiply,
-//     dogYears,
-//     hungryDog,
-//     game,
-//     miles,
-//     feet,
-//     annoyingSong,
-//     grade
-// }
+export default{
+    foo,
+    multiply,
+    dogYears,
+    hungryDog,
+    game,
+    miles,
+    feet,
+    annoyingSong,
+    grade
+}
