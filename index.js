@@ -54,9 +54,9 @@ Do the following:
    HINT: look up the Number method
 */
 var year = "1999";
+var n = Number(year);
 
-
-
+console.log(n);
 /*
 Task 1d - Multiply
  
